@@ -1,0 +1,21 @@
+.ui-button {
+    font-size: 0.875em;
+    font-weight: bolder;
+    text-transform: uppercase;
+    letter-spacing: .15em;
+    padding: 12px 32px;
+    color: #fff;
+    background: $deep-pink;
+    border-radius: 4px;
+    transition: ease-in-out 0.2s;
+    cursor: pointer;
+
+    &:hover {
+        background: $deep-pink-hover;
+        transition: ease-in-out 0.2s;
+    }
+}
+
+.ui-upload-button input {
+    display: none;
+}

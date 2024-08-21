@@ -1,0 +1,235 @@
+.card-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 50%;
+    padding-left: 1em;
+
+    .card-main {
+        position: relative;
+        align-self: flex-start;
+
+        .tribe-container {
+            position: absolute;
+            top: 8px;
+            left: 95px;
+            z-index: 10;
+
+            h4 {
+                position: absolute;
+                width: 100px;
+                font-family: 'Univers-UltraCondensed';
+                text-transform: uppercase;
+                top: 9.5px;
+                left: 25.5px;
+                text-align: center;
+                color: #9E9D99;
+                overflow: hidden;
+            }
+
+            img {
+                width: 150px;
+            }
+        }
+
+        .card-text, .level-text-container {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+            height: 430px;
+            width: 340px;
+            z-index: 10;
+            text-align: center;
+            pointer-events: none;
+
+            .name {
+                font-family: 'BeaufortforLOLJa-Bold';
+                font-size: 1.7em;
+                font-weight: bold;
+                color: #fff;
+                text-transform: uppercase;
+                width: 270px;
+                overflow-wrap: break-word;
+            }
+
+            .keyword-display {
+                width: 280px;
+
+                .keyword-full {
+                    height: 40px;
+                    padding-top: 5px;
+                }
+
+                .keyword-icon {
+                    height: 40px;
+                    padding: 5px 10px 0 10px;
+                }
+            }
+
+            .description {
+                font-family: 'Univers';
+                font-size: 1em;
+                color: #fff;
+                margin: 5px 0;
+                width: 270px;
+                white-space: pre-wrap;
+                overflow-wrap: break-word;
+
+                .keyword {
+                    color: $keyword;
+                }
+    
+                .card-reference {
+                    color: $card-reference;
+                }
+    
+                .inline-icon {
+                    height: 1em;
+                    width: 1em;
+                    object-fit: contain;
+                    vertical-align: bottom;
+                    margin-right: -2px;
+                }
+            }
+        }
+
+        .spell-text {
+            top: 290px;
+            height: 180px;
+            justify-content: flex-start;
+        }
+
+        .level-text-container {
+            position: relative;
+            justify-content: flex-start;
+            height: 45px;
+            left: 2px;
+
+            .description {
+                color: $level-text;
+                margin: 0px;
+                width: 265px;
+            }
+        }
+
+        .card-frame-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            height: 512px;
+            width: 340px;
+            overflow: hidden;
+
+            .card-frame {
+                position: relative;
+                height: 512px;
+                width: 340px;
+                z-index: 1;
+                pointer-events: none;
+            }
+
+            .uploaded-img-container {
+                position: absolute;
+                height: 455px;
+                width: 300px;
+                overflow: hidden;
+                z-index: 0;
+
+                img {
+                    height: 120%;
+                    width: initial;
+                }
+            }
+
+            .shader {
+                position: absolute;
+                bottom: 30px;
+                width: 300px;
+                background: -webkit-linear-gradient(0deg, rgba(0,0,0,1) 40%, rgba(255,255,255,0) 100%);
+                background: -moz-linear-gradient(0deg, rgba(0,0,0,1) 40%, rgba(255,255,255,0) 100%);
+                background: -ms-linear-gradient(0deg, rgba(0,0,0,1) 40%, rgba(255,255,255,0) 100%);
+                background: -o-linear-gradient(0deg, rgba(0,0,0,1) 40%, rgba(255,255,255,0) 100%);
+                background: linear-gradient(0deg, rgba(0,0,0,1) 40%, rgba(255,255,255,0) 100%);
+                z-index: 1;
+                pointer-events: none;
+            }
+
+            .spell-container {
+                height: 250px;
+                width: 220px;
+                top: 20px;
+                border-radius: 50%;
+            }
+
+            .region-icon {
+                position: absolute;
+                top: 425px;
+                left: 147px;
+                width: 50px;
+                opacity: 0.65;
+                z-index: 10;
+            }
+
+            .spell-position {
+                top: 410px;
+            }
+        }
+
+        .mana, .health, .power {
+            position: absolute;
+            z-index: 10;
+            width: 50px;
+            text-align: center;
+            font-family: 'BeaufortforLOLJa-Bold';
+            margin: 0;
+        }
+
+        .mana {
+            top: 30px;
+            left: 20px;
+        }
+
+        .health {
+            top: 435px;
+            right: 20px;
+        }
+
+        .power {
+            top: 435px;
+            left: 20px;
+        }
+
+        .level-condition {
+            position: relative;
+            width: 340px;
+        }
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        .ui-button:last-of-type{
+            margin-left: 10px;
+        }
+    }
+
+    strong {
+        font-size: 0.8em;
+        font-weight: bold;
+        margin-bottom: 8px;
+        color: #fff;
+    }
+
+    .slider {
+        width: 90%;
+        margin-bottom: 1em;
+    }
+}

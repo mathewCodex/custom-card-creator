@@ -1,0 +1,52 @@
+.card-form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding: 2em 2em 0 10%;
+    margin-left: 4em;
+
+    .card-form-body {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0.5em 0 1.5em 0;
+
+        .number-inputs {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 10%;
+        }
+
+        .text-inputs {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 70%;
+            padding: 0 3em;
+
+            .small-inputs {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+
+                .ui-input {
+                    width: 40%;
+                }
+            }
+
+            .ui-textarea {
+                padding-top: 3em;
+            }
+        }
+    }
+
+    .ui-button {
+        align-self: center;
+        margin-top: 20px;
+    }
+
+    .ui-multi-select {
+        margin-bottom: 1em;
+    }
+}

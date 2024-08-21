@@ -1,0 +1,70 @@
+.ui-select {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1em;
+    width: 20%;
+    color: #fff;
+
+    span {
+        font-weight: bold;
+    }
+
+    .select-options {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+        margin-top: 16px;
+        padding-top: 240px;
+        height: 0px;
+        overflow-x: hidden;
+        overflow-y: auto;
+
+        h5 {
+            font-size: 0.75em;
+            text-transform: uppercase;
+            letter-spacing: .15em;
+            padding: 4px 10px 4px 0;
+            transition: ease-in-out 0.2s;
+            cursor: pointer;
+
+            &:hover {
+                color: $deep-pink;
+                transition: ease-in-out 0.2s;
+            }
+        }
+
+        h5:last-of-type {
+            padding-bottom: 0px;
+        }
+
+        .selected {
+            color: $deep-pink;
+        }
+
+        &::-webkit-scrollbar {
+            width: 0.3em;
+          }
+           
+        &::-webkit-scrollbar-track {
+            background-color: transparent;
+        }
+        
+        &::-webkit-scrollbar-thumb {
+            background-color: #fff;
+            border-radius: 4px;
+        }
+
+        &::-webkit-scrollbar-thumb:hover {
+            background-color: $deep-pink;
+        }
+    }
+}
+
+.large {
+    .select-options {
+        padding-top: 181px;
+        height: 120px;
+    }
+}

@@ -1,0 +1,98 @@
+@include media('<=phone') {
+    .main-content {
+        padding-bottom: 20px;
+    }
+
+    .splash {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .card-display {
+        width: 100%;
+        padding: 0;
+        
+        .card-main {
+            align-self: center;
+
+            .mana {
+                top: 35px;
+            }
+    
+            .health, .power {
+                top: 440px
+            }
+        }
+
+        .buttons {
+            margin-bottom: 1em;
+        }
+    }
+
+    .card-form {
+        margin: 0;
+        padding: 0;
+
+        .card-form-body {
+            flex-direction: column;
+            padding: 0;
+
+            .number-inputs {
+                flex-direction: row;
+                justify-content: space-evenly;
+                width: 100%;
+
+                input {
+                    width: 70%;
+                }
+            }
+
+            .text-inputs {
+                width: 100%;
+                padding: 0;
+
+                .small-inputs {
+                    justify-content: space-between;
+                    margin-top: 1.5em;
+
+                    .ui-input {
+                        width: 40%;
+                    }
+                }
+
+                .ui-textarea:last-of-type {
+                    padding-top: 20px;
+                }
+            }
+
+            .ui-select {
+                width: 100%;
+                margin-bottom: 16px;
+
+                .select-options {
+                    padding-top: 380px;
+                }
+
+                h5 {
+                    font-size: 1em;
+                    padding: 8px 10px 8px 0;
+                }
+            }
+        }
+
+        .multi-select-options {
+            flex-wrap: wrap;
+        }
+
+        .image-options img {
+            height: 40px;
+        }
+
+        .ui-button {
+            margin-top: 10px;
+        }
+    }
+}
